@@ -1,0 +1,3 @@
+port=input("Enter port: ")
+
+print(f{port}+1)
