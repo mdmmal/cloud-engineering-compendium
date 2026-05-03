@@ -1,26 +1,34 @@
 # Cloud Engineering Compendium
+### Jamal Muhammad | CS Student → Junior DevOps Engineer | DFW
 
-Study notes, scripts, and labs from my 10-week sprint to SRE/DevOps.
-Started: March 2026 | Target: Job-ready by December 2026
+---
 
-## What's In Here
+This repo is the proof of work.
 
-### Linux
-- `linux/notes/` — Daily lab notes, commands learned, what each does
-- `linux/scripts/` — Bash scripts: hello.sh, file-counter.sh, system-check.sh, log-searcher.sh, backup.sh
+I'm a CS student at East Central University graduating December 2026,
+building toward a junior DevOps/SRE role in the DFW area.
+Everything in here is real — scripts I wrote, labs I ran,
+concepts I worked through, and projects I built.
 
-### Python
-- `python/notes/` — Notes from LabEx Python course
-- `python/scripts/` — Scripts: file organizer, JSON reader, API caller, log analyzer, CLI tool
+Not a course certificate. Not a tutorial clone.
+Work I did.
 
-### Networking
-- `networking/notes/` — CCNA video notes with summaries, glossary, quiz questions, and AWS cloud connections
+---
 
-## Progress
-- [ ] Week 1–2: Linux basics + Python basics + Git setup
-- [ ] Week 3–4: Shell/Bash + first scripts
-- [ ] Week 5–7: All 5 Bash scripts + all 5 Python scripts done
-- [ ] Week 8–10: AWS hands-on (VPC, EC2, S3, CloudWatch)
+## What's in here
+
+| Track | What It Is | Status |
+|---|---|---|
+| [Linux + Bash](./linux/) | Shell scripting, system admin, ops automation | Active |
+| [Python](./python/) | Automation scripts, file I/O, API calls | Active |
+| [Networking](./networking/) | TCP/IP, DNS, subnetting, VPC concepts | Active |
+| [AWS](./aws/) | Hands-on labs, VPC builds, IAM, EC2 | Starting Week 8 |
+| [Docker](./docker/) | Containerization, Dockerfiles, Compose | Starting June |
+| [Projects](./projects/) | Real deployments — Wize PWA DevOps build | Starting May |
+| [Certifications](./certifications/) | Cloud Practitioner, SAA-C03 | In progress |
+
+---
 
 ## Commits
 Every study session ends with a commit. No exceptions.
+Contribution graph is the proof.
