@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Takes a log level (INFO/WARN/ERROR) as input and scans a
+#   predefined list of servers for logs at that level. Validates
+#   input and rejects invalid log levels with usage guidance.
+#
+# DevOps context:
+#   Manual log triage across a server fleet before centralized
+#   logging is in place. Maps to the grep-based log scanning
+#   that precedes CloudWatch or Datadog setup.
+#
+# Real scenario:
+#   Engineer runs this to scan all app servers for ERROR logs
+#   after a failed deployment before the monitoring dashboard
+#   has been configured.
+# ============================================================
+# ============================================================
+# Script:       log_checker.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

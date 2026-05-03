@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Takes an environment name as an argument (dev/staging/production)
+#   and prints the appropriate instructions and warnings for that
+#   target. Rejects unknown environments with usage guidance.
+#
+# DevOps context:
+#   Environment selector for deployment pipelines. Prevents
+#   accidental deploys to the wrong environment by making the
+#   target explicit and surfacing the right warnings per tier.
+#
+# Real scenario:
+#   Engineer passes the target environment as an argument before
+#   a release. Production deployments trigger a change ticket
+#   confirmation prompt automatically.
+# ============================================================
+# ============================================================
+# Script:       deploy_select.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

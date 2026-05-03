@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Takes a size argument (small/medium/large) and outputs the
+#   corresponding CPU, RAM, and storage specs for that server
+#   tier. Rejects invalid sizes with usage guidance.
+#
+# DevOps context:
+#   Resource sizing decision tool. Used before provisioning to
+#   confirm the correct instance size for the workload. Maps to
+#   the instance type selection step before running Terraform.
+#
+# Real scenario:
+#   Engineer runs this to confirm specs before writing the
+#   instance_type into a Terraform config to avoid over or
+#   under provisioning a new service.
+# ============================================================
+# ============================================================
+# Script:       provision_size.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

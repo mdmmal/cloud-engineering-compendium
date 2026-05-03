@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Defines CPU, RAM, storage, and hourly rate variables then
+#   calculates monthly hours, monthly cost, and RAM per core
+#   using bash arithmetic. Exports monthly cost to environment.
+#
+# DevOps context:
+#   Pre-provisioning cost estimation. Calculates infrastructure
+#   costs before committing to a resource configuration. Maps to
+#   the cost planning step before writing Terraform configs.
+#
+# Real scenario:
+#   Engineer runs this to estimate monthly EC2 costs for a new
+#   service before requesting budget approval and writing the
+#   infrastructure code.
+# ============================================================
+# ============================================================
+# Script:       resource_calc.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

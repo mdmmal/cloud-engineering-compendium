@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Simulates a CI/CD pipeline run for a given environment.
+#   Validates the environment argument, loops through servers
+#   running config and connectivity checks, and exports results.
+#
+# DevOps context:
+#   Manual pipeline simulation before Jenkins or GitHub Actions
+#   is configured. Demonstrates the same logic that CI/CD tools
+#   automate — validate, iterate, report, export.
+#
+# Real scenario:
+#   Engineer manually triggers this during initial infrastructure
+#   setup to verify all servers pass config and connectivity
+#   checks before the automated pipeline is wired up.
+# ============================================================
+# ============================================================
+# Script:       pipeline_run.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

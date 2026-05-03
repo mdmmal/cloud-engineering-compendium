@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Calculates a monthly infrastructure cost estimate from server
+#   count, per-server cost, storage volume, per-TB cost, and a
+#   support fee. Outputs a formatted cost breakdown report.
+#
+# DevOps context:
+#   Infrastructure cost calculator for pre-provisioning decisions.
+#   Produces a line-item breakdown before committing to a resource
+#   configuration. Maps to FinOps cost estimation before a sprint.
+#
+# Real scenario:
+#   Engineer runs this before a quarterly infrastructure review
+#   to produce a cost breakdown that justifies or challenges the
+#   current resource allocation.
+# ============================================================
+# ============================================================
+# Script:       cost_calc.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

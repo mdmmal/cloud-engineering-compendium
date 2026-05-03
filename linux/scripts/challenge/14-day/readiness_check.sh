@@ -5,6 +5,26 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Accepts a target environment (dev/staging/production) via
+#   interactive prompt. Validates CPU load and free memory against
+#   thresholds, then approves or blocks the deployment accordingly.
+#
+# DevOps context:
+#   Pre-deployment gate check. Runs before any release to confirm
+#   the system is healthy enough to accept a new deployment.
+#   Maps directly to Jenkins pre-stage validation steps.
+#
+# Real scenario:
+#   On-call engineer runs this before approving an emergency
+#   production deploy at 2am to confirm the system can handle it.
+# ============================================================
+# ============================================================
+# Script:       readiness_check.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Defines a server inventory array, adds a server dynamically,
+#   then loops through the full list printing each server with
+#   an index number and total count.
+#
+# DevOps context:
+#   Fleet inventory listing. Generates a numbered server list
+#   before fleet-wide operations. Maps to the server discovery
+#   step before running Ansible playbooks across a fleet.
+#
+# Real scenario:
+#   Engineer runs this to confirm the full server inventory before
+#   a fleet-wide configuration change to ensure no servers are
+#   missed or duplicated in the operation.
+# ============================================================
+# ============================================================
+# Script:       server_list.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Takes CPU load and a deploy flag as input. Blocks deployment
+#   if CPU is above 80%, warns if between 60-80%, and approves
+#   if CPU is below 60% and the flag is set to ready.
+#
+# DevOps context:
+#   Conditional deployment gate. Prevents releases from going out
+#   when the system is under stress. Maps to automated health
+#   checks that block CI/CD pipeline stages.
+#
+# Real scenario:
+#   Pipeline runs this check before the deploy stage. If CPU is
+#   too high from a previous release, the gate blocks and alerts
+#   the team before damage is done.
+# ============================================================
+# ============================================================
+# Script:       deploy_gate.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:

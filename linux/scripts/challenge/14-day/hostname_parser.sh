@@ -5,6 +5,27 @@
 # Challenge:    14-Day Bash Scripting Challenge
 # ============================================================
 # What it does:
+#   Takes a structured hostname string and extracts components
+#   including environment prefix, region suffix, and length.
+#   Demonstrates staging version replacement and format conversion.
+#
+# DevOps context:
+#   Fleet identification and hostname normalization. In multi-region
+#   deployments, server names encode environment and region. Parsing
+#   them programmatically drives automated routing and tagging.
+#
+# Real scenario:
+#   Automation script parses a fleet of hostnames to identify
+#   which servers belong to production vs staging before applying
+#   a configuration change to the correct group only.
+# ============================================================
+# ============================================================
+# Script:       hostname_parser.sh
+# Track:        Linux / Bash
+# Week:         Week 1 | 14-Day Challenge
+# Challenge:    14-Day Bash Scripting Challenge
+# ============================================================
+# What it does:
 #   [2-3 sentences. Plain language. What happens when you run it.]
 #
 # DevOps context:
