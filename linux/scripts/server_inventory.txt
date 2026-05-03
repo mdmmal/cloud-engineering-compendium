@@ -1,0 +1,11 @@
+# Production Servers
+web-prod-01
+web-prod-02
+app-prod-01
+
+# Staging Servers
+web-stg-01
+app-stg-01
+
+# This host is known bad
+bad-host-$$
