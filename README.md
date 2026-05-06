@@ -5,30 +5,52 @@
 
 This repo is the proof of work.
 
-I'm a CS student at East Central University graduating December 2026,
-building toward a junior DevOps/SRE role in the DFW area.
-Everything in here is real — scripts I wrote, labs I ran,
-concepts I worked through, and projects I built.
-
-Not a course certificate. Not a tutorial clone.
-Work I did.
+CS student at East Central University graduating December 2026.
+Building toward a Junior DevOps/SRE role in the DFW area.
+Everything here is real — scripts written, labs run, concepts worked through.
 
 ---
 
 ## What's in here
 
-| Track | What It Is | Status |
-|---|---|---|
-| [Linux + Bash](./linux/) | Shell scripting, system admin, ops automation | Active |
-| [Python](./python/) | Automation scripts, file I/O, API calls | Active |
-| [Networking](./networking/) | TCP/IP, DNS, subnetting, VPC concepts | Active |
-| [AWS](./aws/) | Hands-on labs, VPC builds, IAM, EC2 | Starting Week 8 |
-| [Docker](./docker/) | Containerization, Dockerfiles, Compose | Starting June |
-| [Projects](./projects/) | Real deployments — Wize PWA DevOps build | Starting May |
-| [Certifications](./certifications/) | Cloud Practitioner, SAA-C03 | In progress |
+| Track | Scripts | Notes | Status |
+|---|---|---|---|
+| [Linux + Bash](./linux/) | 25 | 15 | Active |
+| [Python](./python/) | 23 | 2 | Active |
+| [Networking](./networking/) | — | 11 | Active |
+| [AWS](./aws/) | — | — | Starts Week 8 |
+| [Docker](./docker/) | — | — | Starts June |
+| [Projects](./projects/) | — | — | Starts May |
+| [Certifications](./certifications/) | — | — | In progress |
 
 ---
 
-## Commits
-Every study session ends with a commit. No exceptions.
-Contribution graph is the proof.
+## Current focus
+
+14-day bash challenge — Day 5 of 14. Writing one DevOps-relevant script per day.
+
+→ [See the scripts](./linux/scripts/)
+
+---
+
+## By the numbers
+
+- **Total commits:** 96
+- **Bash scripts written:** 25
+- **Python scripts written:** 23
+- **Study notes committed:** 28
+
+---
+
+## The goal
+
+Junior DevOps Engineer role by December 2026.
+Foundation: Linux, Python, Bash, Networking, AWS, Docker, CI/CD, Terraform.
+Documenting everything publicly.
+
+---
+
+## Connect
+
+GitHub: github.com/mdmmal
+LinkedIn: [your LinkedIn URL]

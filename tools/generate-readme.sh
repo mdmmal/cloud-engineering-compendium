@@ -9,7 +9,8 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 CONFIG="$REPO_ROOT/tools/readme-config.txt"
 
 # Load config
-source "$CONFIG"
+CURRENT_FOCUS=$(grep 'CURRENT_FOCUS=' "$CONFIG" | cut -d'=' -f2-)
+BASH_DAY=$(grep 'BASH_DAY=' "$CONFIG" | cut -d'=' -f2-)
 
 # Count scripts per track
 linux_scripts=$(find "$REPO_ROOT/linux/scripts" -name "*.sh" 2>/dev/null | wc -l | tr -d ' ')
@@ -80,7 +81,7 @@ Documenting everything publicly.
 ## Connect
 
 GitHub: github.com/mdmmal
-LinkedIn: [your LinkedIn URL]
+LinkedIn: linkedin.com/in/jamal-muhammad-a284a7347
 EOF
 
 echo "README.md updated — $total_commits commits, $linux_scripts bash scripts, $python_scripts python scripts"
