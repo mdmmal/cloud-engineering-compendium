@@ -27,7 +27,7 @@ Everything here is real — scripts written, labs run, concepts worked through.
 
 ## Current focus
 
-14-day bash challenge — Day 5 of 14. Writing one DevOps-relevant script per day.
+14-day bash challenge — Day 9 of 14. Writing one DevOps-relevant script per day.
 
 → [See the scripts](./linux/scripts/)
 
@@ -35,7 +35,7 @@ Everything here is real — scripts written, labs run, concepts worked through.
 
 ## By the numbers
 
-- **Total commits:** 96
+- **Total commits:** 99
 - **Bash scripts written:** 25
 - **Python scripts written:** 23
 - **Study notes committed:** 28
@@ -53,4 +53,4 @@ Documenting everything publicly.
 ## Connect
 
 GitHub: github.com/mdmmal
-LinkedIn: [your LinkedIn URL]
+LinkedIn: linkedin.com/in/jamal-muhammad-a284a7347

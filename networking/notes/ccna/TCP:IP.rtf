@@ -1,0 +1,252 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww13460\viewh14920\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ============================================================\
+GUIDED NOTES \'97 TCP/IP Model: DevOps Foundation\
+Source: Jeremy's IT Lab \'97 Internet Protocol Suite\
+Track: Networking\
+============================================================\
+HOW TO USE:\
+  [DURING VIDEO]  = Fill in brackets as you watch\
+  [AFTER VIDEO]   = Answer from your own understanding. These become your note.\
+\
+Brackets like this: [                    ] = fill in the blank\
+\
+============================================================\
+THE MENTAL MAP \'97 WHY LAYERS EXIST\
+[DURING VIDEO]\
+============================================================\
+\
+Networks group different jobs into [  layer                  ] based on what each\
+one is responsible for.\
+\
+Each layer uses the services of the layer [          before or below it         ] it,\
+and provides services to the layer [         after           ] it.\
+\
+The full stack of protocols working together is called the\
+[      network              ] stack.\
+\
+This matters in DevOps because every tool you use \'97 Docker, Nginx,\
+AWS security groups, load balancers \'97 operates at a specific layer.\
+Knowing the layer tells you what the tool can see and what it can't.\
+\
+------------------------------------------------------------\
+THE 5 LAYERS \'97 FILL IN AS JEREMY INTRODUCES THEM\
+[DURING VIDEO]\
+------------------------------------------------------------\
+\
+Layer 5 \'97 [        Application            ] Layer\
+  Job: app-to-app communication, formatting and interpreting data\
+  Examples: HTTP, HTTPS, SSH, DNS, FTP\
+  DevOps tools at this layer: web servers, APIs, browsers\
+\
+Layer 4 \'97 [           Transport         ] Layer\
+  Job: process-to-process delivery using [         Port           ] numbers\
+  Examples: TCP, UDP\
+  DevOps tools at this layer: load balancers, firewalls filtering by port\
+\
+Layer 3 \'97 [         Internet            ] Layer  (also called: Network Layer)\
+  Job: host-to-host delivery using [         IP           ] addresses\
+  Examples: IP (v4 and v6), ICMP\
+  DevOps tools at this layer: routers, route tables, VPCs, subnetting\
+\
+Layer 2 \'97 [         Local Network            ] Layer  (also called: Data Link Layer)\
+  Job: hop-to-hop delivery on a local network using [          MAC        ] addresses\
+  Examples: Ethernet, Wi-Fi\
+  DevOps tools at this layer: switches, VLANs, ARP\
+\
+Layer 1 \'97 [        Physical            ] Layer\
+  Job: sending bits as electrical, optical, or radio signals over the physical medium\
+  Examples: copper cable, fiber, Wi-Fi radio\
+  DevOps relevance: AWS handles this for you in cloud. Understand it exists.\
+\
+------------------------------------------------------------\
+NOTE ON LAYER NUMBERING\
+------------------------------------------------------------\
+\
+AWS docs, certifications, and most tools use OSI layer numbers, not TCP/IP.\
+The TCP/IP Application layer = OSI Layer [   7     ].\
+When AWS says "Layer 7 load balancer" \'97 that means [         Application           ] layer.\
+When AWS says "Layer 4 load balancer" \'97 that means [          transport          ] layer.\
+\
+============================================================\
+IP ADDRESSES vs MAC ADDRESSES vs PORT NUMBERS\
+[DURING VIDEO]\
+============================================================\
+\
+These three address types live at three different layers.\
+Confusing them is one of the most common junior engineer mistakes.\
+\
+IP Address   \uc0\u8594  Layer [    3    ] \u8594  identifies a [    host/interface                ] on the network\
+              scope: [       Global             ] (works across networks)\
+\
+MAC Address  \uc0\u8594  Layer [    2    ] \u8594  identifies an [         NIC           ] on a local network\
+              scope: [         Local/Physical           ] (only works on the local network segment)\
+\
+Port Number  \uc0\u8594  Layer [    4    ] \u8594  identifies a [          process/service          ] running on a host\
+              examples: port [   80     ] = HTTP, port [    443    ] = HTTPS, port [    22    ] = SSH\
+\
+\
+[AFTER VIDEO \'97 DEVOPS BRIDGE]\
+\
+You SSH into an EC2 instance. Under the hood, three address types are used simultaneously.\
+Fill in what each one is doing in that single SSH connection:\
+\
+IP address is doing:\
+Connecting client to and interface so you to an interface\
+\
+Port number is doing:\
+Maintaining a connection with a specific service through a port\
+\
+MAC address is doing:\
+Connection you locally then to a route then to the internet.\
+\
+\
+============================================================\
+ENCAPSULATION \'97 HOW DATA ACTUALLY MOVES\
+[DURING VIDEO]\
+============================================================\
+\
+Encapsulation = as data moves [       data             ] the stack, each layer\
+wraps it with a [       header             ] containing the info that layer needs.\
+\
+Layer 2 also adds a [        trailer            ] at the end \'97 used to check for\
+[          transmission          ] errors on the receiving end.\
+\
+The Physical layer transmits the result as [         bits           ] over the medium.\
+\
+Decapsulation = the receiving device removes headers layer by layer,\
+moving [          up          ] the stack, until the data reaches the application.\
+\
+------------------------------------------------------------\
+PDU NAMES \'97 WHAT THE DATA IS CALLED AT EACH LAYER\
+[DURING VIDEO]\
+------------------------------------------------------------\
+\
+These terms show up in AWS logs, tcpdump output, and documentation constantly.\
+\
+Layer 4 using TCP  \uc0\u8594   [       segment             ]\
+Layer 4 using UDP  \uc0\u8594   [           datagram         ]\
+Layer 3            \uc0\u8594   [          packet          ]   \u8592  most common term in networking\
+Layer 2            \uc0\u8594   [         frame           ]   \u8592  what physically travels over the wire\
+\
+The contents inside any PDU (not including that layer's own header) = the\
+[           payload         ]\
+\
+\
+[AFTER VIDEO \'97 DEVOPS BRIDGE]\
+\
+An alert fires. A teammate says: "packets are reaching the host but\
+the segments aren't making it to the app."\
+\
+Which layer is working?        Layer [    3    ]\
+Which layer has the problem?   Layer [    4    ]\
+\
+In AWS terms, what does that tell you to check?\
+I tell me to check the port connection either the segment is getting lost due to interference or lost in general or the port isn\'92t repsonsieve\
+\
+\
+============================================================\
+HOW LAYERS SEPARATE \'97 WHY THIS MATTERS FOR DEVOPS\
+[DURING VIDEO]\
+============================================================\
+\
+Because layers are modular, you can swap a protocol at one layer without\
+changing the [        other            ].\
+\
+Jeremy gives two examples \'97 write them here:\
+\
+Example 1: swap [          HTTP          ] for TFTP over UDP\
+           \'97 lower layers don't care what the upper layers are doing\
+\
+Example 2: swap wired [          ethernet          ] for wireless Wi-Fi\
+           \'97 upper layers don't care how the signal gets there\
+\
+\
+[AFTER VIDEO \'97 DEVOPS BRIDGE]\
+\
+This separation is why DevOps tooling is composable. Answer these:   \
+\
+Why can you put Nginx in front of any backend app regardless of what language it's written in?\
+Because nginx operates at layer 7 the application layer specifically for http portal. It doesn\'92t care if the payload inside that https request was generated by python.\
+Why can Docker swap its network driver (bridge, host, overlay) without breaking your app?\
+The container sees a standard virtual interface docker handles the translation to physical network at layer 2 and layer 3\
+\
+Why does moving your app from EC2 to Lambda not require rewriting how HTTP works?\
+Both ec2 and lambda adhere to the same World Wide Web standards\
+\
+\
+============================================================\
+THE AWS/CLOUD LAYER MAP \'97 REFERENCE\
+[AFTER VIDEO \'97 FILL FROM MEMORY THEN VERIFY]\
+============================================================\
+\
+Map each AWS concept to its layer. Fill in the layer number.\
+\
+AWS Security Group (port-based rules)         \uc0\u8594   Layer [    4    ]\
+AWS Network ACL (subnet-level filtering)      \uc0\u8594   Layer [    4    ]\
+Application Load Balancer (ALB)               \uc0\u8594   Layer [    7    ]\
+Network Load Balancer (NLB)                   \uc0\u8594   Layer [    4 commonly used for tcp/udp   ]\
+VPC Route Table                               \uc0\u8594   Layer [   3     ]\
+EC2 instance IP address                       \uc0\u8594   Layer [    3    ]\
+Subnet (CIDR block)                           \uc0\u8594   Layer [     3   ]\
+Elastic Network Interface (ENI) MAC address   \uc0\u8594   Layer [    2    ]\
+\
+\
+[AFTER VIDEO \'97 KEY DISTINCTION]\
+\
+ALB operates at Layer 7. NLB operates at Layer 4.\
+What can an ALB see that an NLB cannot?\
+HTTPS headers: cookies, custom headers, Url paths Romanian name. NLB see ip addressing port numbers and alb sees the actual message inside the request\
+\
+When would you chALB is use for standard web traffic and complex routing but with to nab when you need raw unfiltered speed and stability at the network level.oose NLB over ALB?\
+\
+\
+\
+============================================================\
+QUICK RECALL \'97 ANSWER WITHOUT LOOKING UP\
+============================================================\
+\
+Do this last. Closed notes. If you can answer these, commit the note.\
+\
+1. Name the 5 layers, bottom to top, with their numbers:\
+   L1:  Application 5 (HTTP, DNS. SSH NGinx)\
+   L2: Transport 4 (TCP/UDP, ports numbers))\
+   L3: Internet 3 (ip addresses)\
+   L4: Link (ether net wifi)  2(Wifi)\
+   L5: (Physical) 1(Fiber)\
+\
+2. Three address types and their layers:\
+   IP address  \uc0\u8594  Layer 3\
+   MAC address \uc0\u8594  Layer 2\
+   Port number \uc0\u8594  Layer 4\
+\
+3. PDU names:\
+   Layer 2 \uc0\u8594   frame\
+   Layer 3 \uc0\u8594  packet\
+   Layer 4 TCP \uc0\u8594  segment\
+   Layer 4 UDP \uc0\u8594  datagram\
+\
+4. Ping succeeds but your Flask app on port 5000 is unreachable.\
+   Which layers are working? Which has the problem?\
+Layer 3 success but layer 4 transport layer is failing\
+\
+5. In one sentence \'97 what does encapsulation mean?\
+How each layer protects its information so it can be communicated to the next layer.\
+\
+============================================================\
+COMMIT CHECKLIST\
+============================================================\
+\
+[ ] All brackets filled during video\
+[ ] All DevOps bridge questions answered after video\
+[ ] Passed Quick Recall without looking up\
+[ ] Saved as: networking/notes/tcpip-model.md\
+[ ] Committed: networking: TCP/IP model \'97 layers, PDUs, encapsulation, DevOps mapping\
+[ ] Pushed to main\
+\
+============================================================}
