@@ -15,8 +15,8 @@ Everything here is real — scripts written, labs run, concepts worked through.
 
 | Track | Scripts | Notes | Status |
 |---|---|---|---|
-| [Linux + Bash](./linux/) | 25 | 15 | Active |
-| [Python](./python/) | 23 | 2 | Active |
+| [Linux + Bash](./linux/) | 31 | 21 | Active |
+| [Python](./python/) | 22 | 2 | Active |
 | [Networking](./networking/) | — | 11 | Active |
 | [AWS](./aws/) | — | — | Starts Week 8 |
 | [Docker](./docker/) | — | — | Starts June |
@@ -35,10 +35,10 @@ Everything here is real — scripts written, labs run, concepts worked through.
 
 ## By the numbers
 
-- **Total commits:** 99
-- **Bash scripts written:** 25
-- **Python scripts written:** 23
-- **Study notes committed:** 28
+- **Total commits:** 114
+- **Bash scripts written:** 31
+- **Python scripts written:** 22
+- **Study notes committed:** 34
 
 ---
 
