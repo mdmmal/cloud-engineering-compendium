@@ -1,0 +1,19 @@
+=== LOG FORENSICS REPORT ===
+Date: Mon May 18 07:17:27 PM UTC 2026
+Hostname: home-lab
+Log file: service.log
+Total lines: 10000
+
+ERROR count:    793
+CRITICAL count: 211
+WARN count:     2193
+
+Top failing services:
+    425 auth-service:
+    216 payment-processor:
+     54 db-connector:
+     49 cache-service:
+     49 api-gateway:
+
+First CRITICAL error:
+[2026-05-01 00:01:42] [CRITICAL] auth-service: Database query failed: deadlock detected
