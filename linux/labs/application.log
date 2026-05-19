@@ -1,0 +1,20 @@
+2026-04-28 08:01:12 INFO  Application started successfully
+2026-04-28 08:02:45 INFO  Database connection established
+2026-04-28 08:05:33 WARNING Slow query detected on users table (1.2s)
+2026-04-28 08:07:01 ERROR Failed to connect to cache server
+2026-04-28 08:07:15 ERROR Retry attempt 1 for cache connection
+2026-04-28 08:07:30 ERROR Retry attempt 2 for cache connection
+2026-04-28 08:08:00 CRITICAL Cache unavailable - serving stale data
+2026-04-28 08:10:22 INFO  User authentication service healthy
+2026-04-28 08:11:45 ERROR Payment gateway timeout on transaction TXN-9921
+2026-04-28 08:12:00 ERROR Payment gateway timeout on transaction TXN-9922
+2026-04-28 08:12:15 FATAL Payment service unresponsive - circuit breaker tripped
+2026-04-28 08:13:01 ERROR Disk usage at 91% on /dev/sda1
+2026-04-28 08:14:22 ERROR Disk usage at 93% on /dev/sda1
+2026-04-28 08:15:45 CRITICAL Disk usage at 95% - writes may fail
+2026-04-28 08:16:00 ERROR Worker thread pool exhausted
+2026-04-28 08:17:11 INFO  Scheduled cleanup job started
+2026-04-28 08:18:30 WARNING Memory usage at 78%
+2026-04-28 08:19:45 CRITICAL Memory usage at 89% - approaching limit
+2026-04-28 08:20:00 ERROR Out of memory error in reporting module
+2026-04-28 08:21:15 FATAL Application crash - restarting

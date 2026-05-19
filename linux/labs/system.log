@@ -1,0 +1,19 @@
+2026-04-28 08:00:01 INFO  System boot complete
+2026-04-28 08:00:15 INFO  All services started
+2026-04-28 08:01:30 INFO  SSH service listening on port 22
+2026-04-28 08:03:45 WARNING CPU temperature elevated: 78C
+2026-04-28 08:05:00 ERROR SSH login failure: user admin from 203.0.113.42
+2026-04-28 08:05:02 ERROR SSH login failure: user admin from 203.0.113.42
+2026-04-28 08:05:04 ERROR SSH login failure: user admin from 203.0.113.42
+2026-04-28 08:05:06 ERROR SSH login failure: user admin from 203.0.113.42
+2026-04-28 08:05:08 ERROR SSH login failure: user admin from 203.0.113.42
+2026-04-28 08:05:10 CRITICAL Brute force detected from 203.0.113.42 - blocking IP
+2026-04-28 08:07:22 ERROR NFS mount failed: storage.internal not reachable
+2026-04-28 08:08:45 ERROR Swap space usage at 85%
+2026-04-28 08:10:00 FATAL Kernel panic - not syncing: VFS unable to mount root fs
+2026-04-28 08:11:30 INFO  System recovering from kernel panic
+2026-04-28 08:12:00 ERROR Filesystem check required on /dev/sdb1
+2026-04-28 08:13:15 ERROR Cron job failed: /etc/cron.daily/backup
+2026-04-28 08:14:00 WARNING Disk I/O wait time high: 45%
+2026-04-28 08:15:30 ERROR Network interface eth0 dropped 23 packets
+2026-04-28 08:16:45 CRITICAL Network degraded - packet loss exceeding threshold
